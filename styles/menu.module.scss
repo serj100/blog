@@ -1,0 +1,90 @@
+$red: #E74C3C;
+$text_size: 22px;
+$text_color: #F5F5F5;
+$bg_color: #1F191A;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.container_menu {
+    font-family: 'Roboto', sans-serif;
+    .body1 {
+        @media (max-width:576px) { display: none;}
+        height: 40px;
+        background-color: $bg_color;
+    }
+    .body2 {
+        height: 40px;
+        background-color: $bg_color;
+        
+        h4 {
+            padding: 5px;
+            margin-bottom: 5px;
+            color: $text_color;
+        }
+    }
+    .body3 {
+        @media (max-width:576px) { display: none;}
+        // @media (max-width:1200px) { display: none;}
+        height: 80px;
+        background-color: $bg_color;
+        .name {
+            @media (max-width:576px) { display: none;}
+            // @media (max-width:1200px) { display: none;}
+            float: right;
+            margin-right: 5px;
+            margin-top: 15px;
+            h1 {
+                @media (max-width:576px) { display: none;}
+                color: $text_color;
+            }
+        }
+    }
+    .body4 {
+        
+        height: 80px;
+        background-color: $red;
+        .surname {
+            
+            float: left;
+            margin-left: 5px;
+            margin-top: 15px;
+
+            h1 {
+                color: $text_color;
+            }
+        }
+    }
+
+    .menu {
+        background-color: $red;
+        padding-top: 18px;
+        ul {
+            float: right;
+            margin-right: 5%;
+            list-style: none;
+            li {
+                font-size: $text_size+3;           
+                float: left;
+                padding-right: 8px;
+                padding-left: 8px;
+                // border-right: 1px dotted #999;
+            }
+            li:last-child {
+                border: none;
+            }
+            li a {
+                text-decoration: none;
+                color: $text_color;
+            }
+            li a:hover {
+                color: #333;
+                border-bottom: 2px solid $text_color;
+            }
+            li.active a {
+                color: red;
+                // font-weight: normal;
+                border-bottom: none;
+            }
+        }
+    }
+}

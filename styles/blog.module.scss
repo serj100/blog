@@ -1,0 +1,14 @@
+$text_color: #F5F5F5;
+$text_size: 22px;
+$red: #E74C3C;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text_color;
+    h1{
+        font-size: 5vh;
+        padding-top: 30px;
+    }
+
+}
